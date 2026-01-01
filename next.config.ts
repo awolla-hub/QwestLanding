@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Используем SWC для минификации (по умолчанию в Next.js)
-  swcMinify: true,
   async rewrites() {
     return [
       {
