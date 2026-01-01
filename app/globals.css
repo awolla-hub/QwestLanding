@@ -67,6 +67,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Prevent pull-to-refresh on mobile */
   overscroll-behavior-y: contain;
+  /* Improve touch scrolling */
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y pinch-zoom;
 }
 
 /* Ensure no horizontal overflow on mobile */
@@ -452,8 +455,19 @@ p {
     transform: none;
   }
   
+  .btn-primary:active,
+  .btn-secondary:active {
+    transform: scale(0.95);
+  }
+  
   .gradient-border:hover::before {
     opacity: 0.3;
+  }
+  
+  /* Better touch targets on mobile */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
   }
 }
 

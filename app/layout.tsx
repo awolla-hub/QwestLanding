@@ -15,6 +15,13 @@ const bungee = Bungee({
   display: "swap",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://qwestapp.ru"),
   title: {
@@ -139,6 +146,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#A855F7" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
         
         {/* Preload critical resources */}
         <link rel="preload" href="/icon.svg" as="image" type="image/svg+xml" />
