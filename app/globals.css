@@ -78,6 +78,21 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Ensure content is visible on mobile */
+#main-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 /* Skip to content link for accessibility */
 .skip-to-content {
   position: absolute;
@@ -445,6 +460,30 @@ p {
   .glass {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+  }
+  
+  /* Ensure content is visible on mobile */
+  body {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #main-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Ensure text is visible */
+  * {
+    color: inherit;
+  }
+  
+  /* Fix any potential visibility issues */
+  section {
+    position: relative;
+    z-index: 1;
   }
 }
 

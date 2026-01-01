@@ -17,7 +17,7 @@ export default function Home() {
     <main className="min-h-screen relative">
       <Background />
       <ScrollProgress />
-      <div className="relative z-10">
+      <div className="relative z-10" style={{ position: 'relative', zIndex: 10 }}>
         <Navbar />
         <Hero />
         <Features />

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Background() {
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true" style={{ zIndex: 0 }}>
       {/* Base gradient */}
       <div className="absolute inset-0 bg-[#0A0E14]" />
       
