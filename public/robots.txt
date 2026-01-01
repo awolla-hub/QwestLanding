@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://qwestapp.ru/sitemap.xml
+
+# Disallow admin and private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/

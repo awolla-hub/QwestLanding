@@ -1,0 +1,27 @@
+{
+  "name": "Qwest — Сервис выполнения заданий",
+  "short_name": "Qwest",
+  "description": "Герои рядом. Задания ждут. Найдите исполнителя для любой задачи или станьте героем и зарабатывайте.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E14",
+  "theme_color": "#A855F7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "utilities"],
+  "lang": "ru"
+}
+
